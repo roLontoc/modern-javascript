@@ -46,7 +46,7 @@
 
 
 // // IF STATEMENTS
-const age = 25;
+//const age = 25;
 
 // message will be shown
 // if(age > 20){
@@ -112,26 +112,45 @@ const age = 25;
 
 
 // // SWITCH STATEMENTS
-const grade = "50"
+// const grade = "50"
 
-// is === so has to be the same data type to evaluate to true
-switch(grade){
-  case "50" :
-    console.log("You got an A!");
-    break;
-  case "B" :
-    console.log("You got an B!");
-    break;
-  case "C" :
-    console.log("You got an C!");
-    break;
-  case "D" :
-    console.log("You got an D!");
-    break;
-  case "E" :
-    console.log("You got an E!");
-    break;
-  default:
-    console.log("not a valid grade");
+// // is === so has to be the same data type to evaluate to true
+// switch(grade){
+//   case "50" :
+//     console.log("You got an A!");
+//     break;
+//   case "B" :
+//     console.log("You got an B!");
+//     break;
+//   case "C" :
+//     console.log("You got an C!");
+//     break;
+//   case "D" :
+//     console.log("You got an D!");
+//     break;
+//   case "E" :
+//     console.log("You got an E!");
+//     break;
+//   default:
+//     console.log("not a valid grade");
+// }
+
+
+// // VARIABLES AND SCOPE
+// var ignores variable scope that is why we use let and const.
+let age = 30;
+
+// variables in code block only accessible in that block
+if(true){
+  let age = 40;
+  let name = "shaun";
+  console.log("inside 1st code block:", age, name);
+
+  // this inner block will take the variable's latest value assignment
+  if(true){
+    const age = 50;
+    console.log("inside 2nd code block ", age)
+  }
 }
 
+console.log("outside code block:", age);
