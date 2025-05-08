@@ -96,17 +96,42 @@ const age = 25;
 
 
 // // BREAK AND CONTINUE
-const scores = [50, 25,0, 30, 100, 20, 10];
+// const scores = [50, 25,0, 30, 100, 20, 10];
 
-for(let i = 0; i < scores.length; i++){
-  if(scores[i] === 0){
-    continue;
-  }
-  console.log("Your score: ", scores[i]);
+// for(let i = 0; i < scores.length; i++){
+//   if(scores[i] === 0){
+//     continue;
+//   }
+//   console.log("Your score: ", scores[i]);
 
-  if(scores[i] === 100){
-    console.log("congrat you got thee top score!");
+//   if(scores[i] === 100){
+//     console.log("congrat you got thee top score!");
+//     break;
+//   }
+// }
+
+
+// // SWITCH STATEMENTS
+const grade = "50"
+
+// is === so has to be the same data type to evaluate to true
+switch(grade){
+  case "50" :
+    console.log("You got an A!");
     break;
-  }
+  case "B" :
+    console.log("You got an B!");
+    break;
+  case "C" :
+    console.log("You got an C!");
+    break;
+  case "D" :
+    console.log("You got an D!");
+    break;
+  case "E" :
+    console.log("You got an E!");
+    break;
+  default:
+    console.log("not a valid grade");
 }
 
