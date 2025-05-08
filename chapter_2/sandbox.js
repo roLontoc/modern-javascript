@@ -23,7 +23,7 @@
 
 
 
-// //strings
+// //STRINGS
 
 // //single or double quotes to make it a string
 // console.log("hello world");
@@ -75,3 +75,35 @@
 
 //console.log(result);
 
+// //NUMBERS
+let radius = 10;
+const pi = 3.14;
+
+//math operators +, -, *, /, **(to the power of), %
+// console.log(10/2);
+
+// let result = radius % 3;
+// console.log(result);
+//let result = pi * radius**2;
+
+//order of operations - BEDMAS
+//let result = 5 * (10-3)**2;
+//console.log(result);
+
+let likes = 10;
+// likes = likes + 1;
+// same as likes = likes + 1;
+// likes++;
+
+// likes += 10;
+// likes -=5;
+// likes *=2;
+//likes /=2;
+
+//console.log(likes)
+
+// NaN - not a number (tried to do a calculation that did not reult in a number)
+// console.log(5 * "hello");
+
+// let result = "the blog has " + likes + " likes";
+// console.log(result);
