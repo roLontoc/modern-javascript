@@ -165,5 +165,72 @@ let ninjas = ['shaun', 'ryu', 'chun-li'];
 // console.log(result);
 
 
-// BOOLEAN
-console.log(true, false)
+// // BOOLEAN
+console.log(true, false, "true", "false");
+
+let email = "luigi@thenetninja.co.uk";
+let names = ["mario", "luigi", "toad"];
+
+//would be false
+// let result = email.includes("bowser");
+
+// console.log(result);
+
+// COMPARISON OPERATORS
+let age = 25;
+
+// //true
+// console.log(age == 25);
+// //false
+// console.log(age == 30);
+// //true
+// console.log(age != 30);
+// //true
+// console.log(age > 20);
+// //false
+// console.log(age < 20);
+// //true
+// console.log(age <= 25);
+// //true
+// console.log(age >= 25);
+
+// let name = "shaun";
+// //true
+// console.log(name =="shaun")
+// //false
+// console.log(name =="Shaun")
+// //true necause s comes later in the alphabet then c. Later letters in the alphabet are greater than earlier ones
+// console.log(name > "crystal")
+// //true lowercase letters are greater than uppercase
+// console.log(name >"Shaun")
+// //true greater than any uppercase letter
+// console.log(name >"Crystal")
+
+// LOOSE COMPARISON
+// differnt data types can still be equal because javascript type conversion
+
+//true
+//console.log(age == 25);
+//console.log(age == "25");
+
+//false
+// console.log(age != 25);
+// console.log(age != "25");
+
+// STRICT COMPARISON
+// differnt data types are not equal
+
+// //true
+// console.log(age === 25);
+
+// //false conversion is not taking place
+// console.log(age === "25");
+
+// //false
+// console.log(age !== 25);
+
+// //true
+// console.log(age !== "25");
+
+
+// // TYPE CONVERSION
