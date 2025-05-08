@@ -37,8 +37,38 @@
 
 // // DO WHILE LOOPS
 
-let i = 3;
-do{
-  console.log("val of i is:", i)
-  i++;
-} while(i <5);
+// let i = 3;
+// do{
+//   console.log("val of i is:", i)
+//   i++;
+// } while(i <5);
+
+
+
+// // IF STATEMENTS
+const age = 25;
+
+// message will be shown
+if(age > 20){
+  console.log("you are over the age of 20.");
+}
+
+const ninjas = ['shaun', 'ryu', 'chun-li', 'yoshi'];
+
+// message we not be shown
+if(ninjas.length > 4) {
+  console.log("that's a lot of ninjas")
+}
+
+const password = "passwordsarecool";
+
+if(password.length >=12){
+  console.log("that password is mighty strong")
+}
+else if(password.length >= 8){
+  console.log("the password is long enough!");
+}
+else {
+  console.log("your password is not long enough.")
+}
+
