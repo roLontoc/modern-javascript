@@ -88,9 +88,25 @@ const age = 25;
 
 // // LOGICAL NOT (!)
 
-let user = false;
+// let user = false;
 
-if(!user){
-  console.log("you must be logged in to continue");
+// if(!user){
+//   console.log("you must be logged in to continue");
+// }
+
+
+// // BREAK AND CONTINUE
+const scores = [50, 25,0, 30, 100, 20, 10];
+
+for(let i = 0; i < scores.length; i++){
+  if(scores[i] === 0){
+    continue;
+  }
+  console.log("Your score: ", scores[i]);
+
+  if(scores[i] === 100){
+    console.log("congrat you got thee top score!");
+    break;
+  }
 }
 
