@@ -109,22 +109,61 @@ const pi = 3.14;
 // console.log(result);
 
 // // TEMPLATE STRINGS
-const title = "Best Roads of 2019"
-const author = "Mario";
-const likes = 30;
+// const title = "Best Roads of 2019"
+// const author = "Mario";
+// const likes = 30;
 
 // concat
 // let result = "the blog called " + title + " by " + author + " has " + likes + " likes ";
 
 // template string way (backticks)
-let result = `The blog called ${title} by ${author} has ${likes} likes`;
-console.log(result);
+// let result = `The blog called ${title} by ${author} has ${likes} likes`;
+// console.log(result);
 
 // creating html template
-let html = `
-<h2>${title}</h2>
-<p>By ${author}</p>
-<span>This blog has ${likes} likes</span>
-`;
+// let html = `
+// <h2>${title}</h2>
+// <p>By ${author}</p>
+// <span>This blog has ${likes} likes</span>
+// `;
 
-console.log(html);
+// console.log(html);
+
+// // ARRAYS
+let ninjas = ['shaun', 'ryu', 'chun-li'];
+
+//override with a new value
+// ninjas[1] = 'ken';
+// console.log(ninjas[1]);
+
+// let ages = [20,25,30,25];
+// console.log(ages[2]);
+
+// let random = ['shaun', 'crystal', 30, 20]
+// console.log(random);
+
+//console.log(ninjas.length);
+
+// // ARRAY METHODS
+
+//joins all the array elements together seperated by commas
+// let result = ninjas.join(',');
+
+//shows the position of the element in the array
+//let result = ninjas.indexOf('chun-li');
+
+//let result = ninjas.concat('ken', 'crystal')
+
+//shows the new length of the array
+//this method alters the original value
+//called a destructive mehtod
+// let result = ninjas.push('ken');
+
+// returns the result that was popped off (the last entered element)
+// result = ninjas.pop();
+
+// console.log(result);
+
+
+// BOOLEAN
+console.log(true, false)
