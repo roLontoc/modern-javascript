@@ -166,7 +166,7 @@ let ninjas = ['shaun', 'ryu', 'chun-li'];
 
 
 // // BOOLEAN
-console.log(true, false, "true", "false");
+//console.log(true, false, "true", "false");
 
 let email = "luigi@thenetninja.co.uk";
 let names = ["mario", "luigi", "toad"];
@@ -234,3 +234,23 @@ let age = 25;
 
 
 // // TYPE CONVERSION
+let score = "100";
+
+// score = Number(score);
+// console.log(score + 1);
+// console.log(typeof score);
+
+// results in NaN
+//let result = Number("hello");
+//let result = String(50)
+
+//positive numbers are considered true
+let result = Boolean(100);
+//zero is false
+// let result = Boolean(0);
+//strings are true
+// let result = Boolean('hello');
+//empty string is false
+// let result = Boolean('');
+
+console.log(result, typeof result);
