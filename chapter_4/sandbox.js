@@ -76,3 +76,64 @@ const bill = (products, tax) => {
 
 const result = bill([10,15,30], 0.2);
 console.log(result);
+
+
+// // METHODS
+// invoked using . notation
+// defined on a data type or object
+const name = "shaun";
+
+let resultTwo = name.toUpperCase();
+console.log(resultTwo);
+
+
+// // CALLBACKS AND FOREACH
+// we pass a function into another function or method as an arguement and at some point it may be called and passed a value.
+
+// when we call this function we need to pass it a function as a parameter (MyFunc)
+const myFunc = (callbackFunc) => {
+  // do something
+  let value = 50;
+  callbackFunc(value); // call this callback function
+};
+
+// callback function called here.
+// instead of passing in a string we are passing a function as an arguement
+myFunc(value =>{
+  // do something
+  console.log(value)
+});
+
+
+// FOR EACH
+//let people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+
+// alternative: you can define a callback function elsewhere then just pass it to the function
+// const logPerson = (person, index) => {
+//   console.log(`${index} - hello ${person}`)
+// }
+
+// passing the function as an parameter here
+//people.forEach(logPerson)
+
+
+// function defined within
+// people.forEach((person, index) => {
+//   console.log(person, index);
+// });
+
+const ul = document.querySelector(".people");
+
+const people = ['mario', 'luigi', 'ryu', 'shaun', 'chun-li'];
+
+let html = '';
+
+people.forEach(person =>{
+  // create html template
+  html += `<li style="color: purple">${person}</li>`;
+
+});
+
+console.log(html);
+ul.innerHTML = html;
