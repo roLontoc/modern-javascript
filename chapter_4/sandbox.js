@@ -30,3 +30,16 @@ speak();
 
 // will override the default values
 speak("shaun", "day");
+
+
+// // RETURNING VALUES
+const calcArea = function(radius){
+  //let area = 3.14 * radius**2 don't need the variable
+  return 3.14 * radius**2;
+};
+
+const area = calcArea(5);
+console.log(area);
+
+
+// // ARROW FUNCTIONS
