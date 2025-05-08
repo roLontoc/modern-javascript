@@ -90,7 +90,7 @@ const pi = 3.14;
 //let result = 5 * (10-3)**2;
 //console.log(result);
 
-let likes = 10;
+//let likes = 10;
 // likes = likes + 1;
 // same as likes = likes + 1;
 // likes++;
@@ -107,3 +107,24 @@ let likes = 10;
 
 // let result = "the blog has " + likes + " likes";
 // console.log(result);
+
+// // TEMPLATE STRINGS
+const title = "Best Roads of 2019"
+const author = "Mario";
+const likes = 30;
+
+// concat
+// let result = "the blog called " + title + " by " + author + " has " + likes + " likes ";
+
+// template string way (backticks)
+let result = `The blog called ${title} by ${author} has ${likes} likes`;
+console.log(result);
+
+// creating html template
+let html = `
+<h2>${title}</h2>
+<p>By ${author}</p>
+<span>This blog has ${likes} likes</span>
+`;
+
+console.log(html);
