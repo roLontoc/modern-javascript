@@ -28,14 +28,15 @@
 // console.log(user[key]);
 
 
-
 // ADDING METHODS TO USER OBJECTS
 let user = {
   name: "crystal",
   age: 30,
   email: "crystal@tehnetninja.co.uk",
   location: "berlin",
-  blogs: ["why mac and cheese rules", "10 things to make wiht marmite"],
+  blogs: [{title: "why mac and cheese rules", likes: 30},
+          {title: "10 things to make with marmite", likes: 50}
+  ],
   login: function(){ // : function not necessary
     console.log("the user is logged in");
   },
@@ -46,14 +47,25 @@ let user = {
   // When we use the this object it doent change the value
     console.log("the user has written the following blogs:");
     this.blogs.forEach(blog => {
-      console.log(blog);
+      console.log(blog.title, blog.likes);
     })
   }
 };
 
-// calling the function
+// calling the functions
 user.login();
 user.logout();
 user.logBlogs();
+
+
+
+//STORING OBJECTS IN ARRAYS
+const blogs = [
+  {title: "why mac and cheese rules", likes: 30},
+  {title: "10 things to make with marmite", likes: 50}
+];
+
+//console.log(blogs);
+
 
 
