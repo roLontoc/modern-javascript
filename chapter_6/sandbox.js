@@ -56,3 +56,35 @@ people.forEach(person => {
 });
 
 
+// CHANGING ATTRIBUTES
+
+const link = document.querySelector("a");
+console.log(link.getAttribute('href'));
+link.setAttribute("href", "https://www.rrc.ca");
+link.innerText = "rrc polytech";
+
+const mssg = document.querySelector("p");
+console.log(mssg.getAttribute("class"));
+mssg.setAttribute("class", "success");
+console.log(mssg.getAttribute("class"));
+mssg.setAttribute("style", "color: green;");
+
+
+// // CHANGING STYLE ATTRIBUTES
+// set attribute overrides all previous styles
+const title = document.querySelector("h1");
+
+//title.setAttribute("style", "margin: 50px;");
+console.log(title.style);
+console.log(title.style.color);
+
+// this adds a new property without overriding it
+title.style.margin = "50px";
+title.style.color = "crimson";
+title.style.fontSize = "60px";
+title.style.margin = "";
+
+
+
+
+
