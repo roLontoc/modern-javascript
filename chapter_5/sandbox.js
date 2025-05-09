@@ -94,3 +94,25 @@ console.log(random);
 
 // produces a random whole number between 1 and 100
 console.log(Math.round(random * 100));
+
+
+
+// // PRIMITIVE VALUES
+let scoreOne = 50;
+let scoreTwo = scoreOne;
+
+console.log(`scoreOne: ${scoreOne}, scoreTwo: ${scoreTwo}`)
+
+// if we change the value here, it doesn't affect scoreTwo
+scoreOne = 100;
+console.log(`scoreOne: ${scoreOne}, scoreTwo: ${scoreTwo}`)
+
+
+// // REFERENCE TYPES
+// only stored once on the heap. Both variables are pointed to the same thing.
+const userOne = {name: "ryu", age: "30"};
+const userTwo = userOne;
+
+// both names change.
+userOne.name = "chun-li";
+console.log(userOne, userTwo);
