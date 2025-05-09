@@ -28,63 +28,84 @@
 
 
 // CHANGING TEXT
-const para = document.querySelector("p");
+// const para = document.querySelector("p");
 
-// to add +=
-para.innerText = "ninjas are awesome";
+// // to add +=
+// para.innerText = "ninjas are awesome";
 
-const paras = document.querySelectorAll("p");
-paras.forEach(para => {
-  console.log(para.innerText);
-  para.innerText += " extra text";
-});
-
-
-// CHANGING HTML
-const content = document.querySelector(".content");
-//console.log(content.innerHTML);
-
-// += to append
-content.innerHTML = "<h2> This is a New H2!</h2>"
+// const paras = document.querySelectorAll("p");
+// paras.forEach(para => {
+//   console.log(para.innerText);
+//   para.innerText += " extra text";
+// });
 
 
-// MAKING HTML TEMPLATE
-const people = ["mario", "luigi", "yoshi"];
+// // CHANGING HTML
+// const content = document.querySelector(".content");
+// //console.log(content.innerHTML);
 
-people.forEach(person => {
-  content.innerHTML += `<p>${person}</p> `
-});
+// // += to append
+// content.innerHTML = "<h2> This is a New H2!</h2>"
+
+
+// // MAKING HTML TEMPLATE
+// const people = ["mario", "luigi", "yoshi"];
+
+// people.forEach(person => {
+//   content.innerHTML += `<p>${person}</p> `
+// });
 
 
 // CHANGING ATTRIBUTES
 
-const link = document.querySelector("a");
-console.log(link.getAttribute('href'));
-link.setAttribute("href", "https://www.rrc.ca");
-link.innerText = "rrc polytech";
+// const link = document.querySelector("a");
+// console.log(link.getAttribute('href'));
+// link.setAttribute("href", "https://www.rrc.ca");
+// link.innerText = "rrc polytech";
 
-const mssg = document.querySelector("p");
-console.log(mssg.getAttribute("class"));
-mssg.setAttribute("class", "success");
-console.log(mssg.getAttribute("class"));
-mssg.setAttribute("style", "color: green;");
+// const mssg = document.querySelector("p");
+// console.log(mssg.getAttribute("class"));
+// mssg.setAttribute("class", "success");
+// console.log(mssg.getAttribute("class"));
+// mssg.setAttribute("style", "color: green;");
 
 
 // // CHANGING STYLE ATTRIBUTES
 // set attribute overrides all previous styles
-const title = document.querySelector("h1");
+// const title = document.querySelector("h1");
 
-//title.setAttribute("style", "margin: 50px;");
-console.log(title.style);
-console.log(title.style.color);
+// //title.setAttribute("style", "margin: 50px;");
+// console.log(title.style);
+// console.log(title.style.color);
 
-// this adds a new property without overriding it
-title.style.margin = "50px";
-title.style.color = "crimson";
-title.style.fontSize = "60px";
-title.style.margin = "";
-
-
+// // this adds a new property without overriding it
+// title.style.margin = "50px";
+// title.style.color = "crimson";
+// title.style.fontSize = "60px";
+// title.style.margin = "";
 
 
+// CHANGING CLASSES
 
+// const content = document.querySelector("p");
+// console.log(content.classList);
+// content.classList.add("error");
+// content.classList.remove("error");
+// content.classList.add("success");
+
+ //text content gets all text even hidden text
+const paras = document.querySelectorAll("p");
+paras.forEach(p => {
+  if(p.textContent.includes("error")){
+    p.classList.add("error");
+  };
+  if(p.textContent.includes("success")){
+    p.classList.add("success");
+  }
+})
+
+
+// TOGGLE CLASSLISTS
+const title = document.querySelector(".title")
+title.classList.toggle("test");
+title.classList.toggle("test");
