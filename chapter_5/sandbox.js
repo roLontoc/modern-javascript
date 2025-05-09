@@ -53,9 +53,9 @@ let user = {
 };
 
 // calling the functions
-user.login();
-user.logout();
-user.logBlogs();
+// user.login();
+// user.logout();
+// user.logBlogs();
 
 
 
@@ -68,4 +68,29 @@ const blogs = [
 //console.log(blogs);
 
 
+// MATH OBJECT
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
 
+const area = 7.7;
+
+console.log(Math.round(area));
+
+// rounds down to the nearest whole number
+console.log(Math.floor(area));
+
+//rounds up to the nearest whole number
+console.log(Math.ceil(area));
+
+// takes away the decimal and leaves just the int
+console.log(Math.trunc(area));
+
+// random numbers
+
+// random number between 0 and 1
+const random = Math.random();
+console.log(random);
+
+// produces a random whole number between 1 and 100
+console.log(Math.round(random * 100));
